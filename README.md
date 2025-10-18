@@ -3,27 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PDF Converter - Transform Images to PDF</title>
+<title>ALL ABOUT PDF - PDF Converter</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-  body { 
-    background-color: #1e293b; 
-    color: #f1f5f9;
-  }
-  .dark input, .dark select, .dark .slider { 
-    background-color: #334155; 
-    color: #f1f5f9; 
-  }
-  .dark #dropArea { 
-    color: #f1f5f9; 
-  }
-  .dark #preview { 
-    color: #f1f5f9; 
-  }
-  .dark #status { 
-    color: #86efac; 
-  }
+  body.dark { background-color: #1e293b; color: #f1f5f9; }
+  .dark input, .dark select, .dark .slider { background-color: #334155; color: #f1f5f9; }
+  .dark #dropArea { color: #f1f5f9; }
+  .dark #preview { color: #f1f5f9; }
+  .dark #status { color: #86efac; }
 
   /* Dark mode toggle styles */
   .checkbox { display: none; }
@@ -68,36 +56,13 @@
   @keyframes spin {
     to { transform: rotate(360deg); }
   }
-  
-  /* Logo styling */
-  .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  .logo {
-    max-height: 70px;
-    width: auto;
-  }
-  
-  /* Custom card styling to complement dark blue background */
-  .main-card {
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  }
-  .dark .main-card {
-    background: linear-gradient(135deg, #334155 0%, #1e293b 100%);
-  }
 </style>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen transition-colors duration-500">
+<body class="bg-gray-100 dark:bg-gray-900 flex flex-col items-center justify-center min-h-screen transition-colors duration-500">
 
-<div class="main-card p-6 sm:p-8 rounded-2xl shadow-lg w-full max-w-lg">
+<div class="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-lg w-full max-w-lg">
   <div class="flex justify-between items-center mb-4">
-    <div class="logo-container w-full">
-      <img src="https://i.ibb.co/KjGRGvLL/PDFFF.png" alt="PDF Converter Logo" class="logo">
-    </div>
+    <h1 class="text-2xl font-bold text-center w-full">ALL ABOUT PDF</h1>
     <input type="checkbox" id="themeToggle" class="checkbox">
     <label for="themeToggle" class="slider"></label>
   </div>
@@ -176,7 +141,7 @@
 </div>
 
 <!-- Footer -->
-<p class="text-center text-gray-300 mt-6 text-sm">
+<p class="text-center text-gray-500 dark:text-gray-400 mt-6 text-sm">
   Made with ❤ by Armeen
 </p>
 
